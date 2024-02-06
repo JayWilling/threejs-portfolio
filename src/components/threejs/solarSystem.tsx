@@ -1,4 +1,4 @@
-import { Sphere, Text, Text3D, useScroll } from "@react-three/drei";
+import { Sphere, Stars, Text, Text3D, useScroll } from "@react-three/drei";
 import gsap from "gsap";
 import React, { useLayoutEffect, useRef, useState } from "react";
 import { BloomEffect } from "../../assets/shaders/Bloom";
@@ -225,6 +225,33 @@ export const SolarSystem = () => {
 
 	return (
 		<group position={[0, 0, 0]} ref={solarSystemRef}>
+			<Stars
+				radius={250}
+				depth={50}
+				count={2500}
+				factor={4}
+				saturation={0}
+				fade
+				speed={1}
+			/>
+			<Stars
+				radius={100}
+				depth={50}
+				count={2500}
+				factor={4}
+				saturation={0}
+				fade
+				speed={1}
+			/>
+			<Stars
+				radius={50}
+				depth={50}
+				count={1000}
+				factor={4}
+				saturation={0}
+				fade
+				speed={1}
+			/>
 			<Text>JACK WILLING</Text>
 			<group ref={starRef} position={[0, -SECTION_HEIGHT, -10]}>
 				<Star />

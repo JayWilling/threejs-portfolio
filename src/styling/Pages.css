@@ -1,26 +1,23 @@
 .landingPage {
     position: relative;
     background-color: black;
-}
-
-.section {
-    height: 100vh;
-    color: white;
-    z-index: 2;
+    /* height: 100vh;
+    width: 100vw; */
 }
 
 .canvasContainer {
-    position: fixed;
-    top: 0%;
-    height: 100vh;
-    width: 100vw;
+    /* position: fixed; */
+    /* top: 0%; */
+    /* height: 100vh;
+    width: 100vw; */
     z-index: 100;
     background-color: black;
 }
 
 .landingPage-canvas {
-    position: absolute;
+    /* position: absolute;
     height: 100vh;
-    z-index: 1;
+    height: 100%;
+    z-index: 1; */
     /* background-color: beige; */
 }

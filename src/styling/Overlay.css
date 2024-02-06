@@ -1,0 +1,24 @@
+.overlaySection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    /* height: 85.5vh; */
+    height: 100vh;
+    width: 100vw;
+    max-height: 100vh;
+    border: 1px solid white;
+    padding: 50px;
+}
+
+.overlaySection .inner {
+    background-color: #282c34;
+    color: white;
+    width: 30vw;
+    height: 100%;
+    max-height: 100vh;
+}
+
+.overlaySection .left {
+    width: 30vw;
+}
