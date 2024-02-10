@@ -1,4 +1,11 @@
-import { Sphere, Stars, Text, Text3D, useScroll } from "@react-three/drei";
+import {
+	Float,
+	Sphere,
+	Stars,
+	Text,
+	Text3D,
+	useScroll,
+} from "@react-three/drei";
 import gsap from "gsap";
 import React, { useLayoutEffect, useRef, useState } from "react";
 import { BloomEffect } from "../../assets/shaders/Bloom";

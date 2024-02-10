@@ -20,14 +20,17 @@ export const Overlay = () => {
 
 	useFrame(() => {
 		setOpacityFirstSection(1 - scroll.range(0, 1 / 5));
-		setOpacitySecondSection(scroll.curve(1 / 5, 1 / 5));
-		setOpacityThirdSection(scroll.range(2 / 5, 1 / 5));
-		setOpacityFourthSection(scroll.range(3 / 5, 1 / 5));
-		setOpacityFifthSection(scroll.curve(4 / 5, 1 / 5));
+		setOpacitySecondSection(scroll.curve(1 / 5 - (1 / 5) * 0.2, 1 / 5));
+		setOpacityThirdSection(scroll.curve(2 / 5, 1 / 5));
+		setOpacityFourthSection(scroll.curve(3 / 5 + (1 / 5) * 0.2, 1 / 5));
+		setOpacityFifthSection(scroll.range(4 / 5, 1 / 5));
 	});
 
 	return (
-		<Scroll html>
+		<Scroll
+			html
+			style={{ scrollSnapType: "y mandatory", overflowY: "scroll" }}
+		>
 			<Section opacity={opacityFirstSection}>
 				<TitleSection />
 			</Section>

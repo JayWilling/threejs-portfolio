@@ -16,9 +16,9 @@ export const LandingPage = () => {
 
 const SpaceCanvas = () => {
 	return (
-		<Canvas className="landingPage-canvas">
+		<Canvas frameloop="demand" className="landingPage-canvas">
 			<ambientLight intensity={1} />
-			<OrbitControls enableZoom={false} makeDefault />
+			<OrbitControls enabled={false} enableZoom={false} makeDefault />
 			<ScrollControls pages={5}>
 				<Overlay />
 				<SolarSystem />
